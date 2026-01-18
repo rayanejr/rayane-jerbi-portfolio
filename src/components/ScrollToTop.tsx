@@ -5,15 +5,18 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Désactive la restauration automatique du scroll
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
-
-    // Scroll immédiat et fiable
+    // 1️⃣ Scroll window (fallback)
     window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
+
+    // 2️⃣ Scroll conteneurs possibles
+    const selectors = ["main", "#root", ".app", ".layout"];
+
+    selectors.forEach((selector) => {
+      const el = document.querySelector(selector);
+      if (el) {
+        el.scrollTop = 0;
+      }
+    });
   }, [pathname]);
 
   return null;
