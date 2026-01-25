@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
@@ -7,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ArrowLeft, Calendar } from "lucide-react";
 import { getProjectImageUrl } from "@/utils/imageLoader";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 interface Project {
   id: string;
@@ -27,6 +27,9 @@ const ProjectDetail = () => {
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
+  
+  // Dynamic title based on project
+  useDocumentTitle(project?.title ? `${project.title}` : "Projet");
 
   useEffect(() => {
     if (id) {

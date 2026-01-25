@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Shield, Target, Code, Award, ExternalLink, ChevronRight, Mail, Phone, MapPin, Terminal, Copy, Download } from "lucide-react";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import CVDownloadButton from "@/components/CVDownloadButton";
 import AIAssistantSection from "@/components/AIAssistantSection";
 import { Button } from "@/components/ui/button";
@@ -49,6 +50,7 @@ const safeParseArray = (str: string): string[] => {
 const projectFallbacks = [projectSecurity, projectSoc, projectThreat];
 
 export default function Home() {
+  useDocumentTitle("Accueil");
   const [skills, setSkills] = useState<SkillGroup[]>([]);
   const [selectedSkillIndex, setSelectedSkillIndex] = useState(0);
   const [certifications, setCertifications] = useState<CertRow[]>([]);
