@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { CalendarDays, ExternalLink, RefreshCw, Shield, AlertTriangle, Bug, Database, Cloud, Wrench, FileText, Radio } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 interface VeilleItem {
   id: string;
@@ -44,6 +45,7 @@ const severityColors = {
 };
 
 const VeilleTechno = () => {
+  useDocumentTitle("Veille Techno");
   const [items, setItems] = useState<VeilleItem[]>([]);
   const [filteredItems, setFilteredItems] = useState<VeilleItem[]>([]);
   const [loading, setLoading] = useState(true);

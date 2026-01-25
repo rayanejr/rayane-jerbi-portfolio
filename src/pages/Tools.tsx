@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Shield, Key, AlertTriangle, Users, Lock, Globe, Terminal, Wifi, Search, Bug, Code, Database, Activity, Wrench } from "lucide-react";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 interface Tool {
   id: string;
@@ -19,6 +20,7 @@ interface Tool {
 }
 
 const Tools = () => {
+  useDocumentTitle("Outils");
   const [tools, setTools] = useState<Tool[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTool, setActiveTool] = useState<string | null>(null);

@@ -3,6 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Building, MapPin, CheckCircle, Briefcase, Sparkles } from "lucide-react";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 interface Experience {
   id: string;
@@ -18,6 +19,7 @@ interface Experience {
 }
 
 const Experience = () => {
+  useDocumentTitle("Expérience");
   const [experiences, setExperiences] = useState<Experience[]>([]);
   const [loading, setLoading] = useState(true);
 
