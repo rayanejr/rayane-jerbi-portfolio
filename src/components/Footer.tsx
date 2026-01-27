@@ -45,7 +45,7 @@ export function Footer() {
   const displayName = profile?.full_name || "Rayane JERBI";
   const roleTitle = "Alternant Ingénieur Réseaux & Systèmes";
   const company = "LNE";
-  const degree = "M1 IRS";
+  const degree = "M2 IRS Cyber";
   const school = "Université Paris-Saclay";
   const tagline = "Cybersécurité • DevOps • Réseaux";
 
