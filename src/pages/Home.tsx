@@ -61,14 +61,14 @@ export default function Home() {
 
   // === Titres qui tournent (typewriter) ===
   const roles = [
-    "Alternant Ingénieur Cloud & Sécurité",
-    "Pentester Junior (Alternance)",
-    "Alternant Ingénieur DevSecOps",
-    "Analyste SOC / SIEM (Alternance)",
-    "Alternant Ingénieur Systèmes & Réseaux",
-    "Réponse à Incident – CSIRT (Alternance)",
-    "Ingénieur Réseaux & Sécurité (Alternance)",
-    "Ingénieur Sécurité Cloud (AWS/Azure) – Alternance",
+    "Apprenti Ingénieur Cloud & Sécurité",
+    "Apprenti Pentester Junior",
+    "Apprenti Ingénieur DevSecOps",
+    "Apprenti Analyste SOC (SIEM)",
+    "Apprenti Ingénieur Systèmes & Réseaux",
+    "Apprenti Analyste Réponse à Incident (CSIRT)",
+    "Apprenti Ingénieur Réseaux & Sécurité",
+    "Apprenti Ingénieur Sécurité Cloud (AWS / Azure)",
   ];
 
   const [resumeUrl, setResumeUrl] = useState<string | null>(null);
@@ -771,10 +771,6 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-orbitron font-bold">
               <span className="cyber-text">Certifications</span>
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Sécurité du Cloud (DataScientest, 03/2024) • Bash & Linux (01/2024) • Introduction à Python (01/2024) •
-              Prévention Sup’ (INRS, 02/2024)
-            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
