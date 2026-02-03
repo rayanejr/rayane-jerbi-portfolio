@@ -418,21 +418,22 @@ export default function Home() {
                 className="cyber-border hover:cyber-glow transition-all duration-500 bg-card/50 backdrop-blur-sm animate-fade-in"
                 style={{ animationDelay: "0.6s", animationFillMode: "both" }}
               >
-                <CardContent className="p-6">
+                <CardContent className="p-6 space-y-4">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Étudiant en Master IRS spécialité Cybersécurité, orienté DevSecOps et sécurité des infrastructures.
-                    Compétences en CI/CD (GitLab, Jenkins), Cloud et IaC (AWS, Terraform) et automatisation (Python,
-                    Bash, PowerShell) pour améliorer la sécurité et la fiabilité.
+                    Étudiant en Master Ingénierie des Réseaux et Systèmes – spécialité cybersécurité, je m'intéresse aux métiers de la cybersécurité et du SecOps, avec un focus sur la sécurisation des infrastructures, des environnements systèmes et réseaux et des processus d'exploitation IT.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Actuellement en alternance au Laboratoire National de Métrologie et d'Essais (LNE), j'évolue dans un environnement institutionnel structuré, où j'interviens sur des sujets systèmes, réseaux et sécurité opérationnelle.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    À partir de septembre 2026, j'intégrerai le Mastère Spécialisé Expert en Cybersécurité (UTT) afin de renforcer mes compétences en cybersécurité opérationnelle, SecOps et protection des systèmes d'information.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <Badge className="bg-green-600 text-white border-0">Master IRS Cyber 2024–2026</Badge>
-                    <Badge className="bg-green-600 text-white border-0">Alternance 3s/1s</Badge>
-                    <Badge className="bg-green-600 text-white border-0">DevSecOps • CI/CD • Jenkins</Badge>
-                    <Badge className="bg-green-600 text-white border-0">Cybersécurité • Pentest • Audit</Badge>
-                    <Badge className="bg-green-600 text-white border-0">Cloud • AWS • Terraform</Badge>
-                    <Badge className="bg-green-600 text-white border-0">
-                      Automatisation • Python • Bash • PowerShell
-                    </Badge>
+                    <Badge className="bg-green-600 text-white border-0">Mastère Spécialisé Expert en Cybersécurité – UTT</Badge>
+                    <Badge className="bg-green-600 text-white border-0">2026 – 2027 • Alternance 3s/1s</Badge>
+                    <Badge className="bg-green-600 text-white border-0">Cybersécurité • SecOps • Sécurité des infrastructures</Badge>
+                    <Badge className="bg-green-600 text-white border-0">Gestion des accès • Durcissement • Supervision</Badge>
+                    <Badge className="bg-green-600 text-white border-0">Conformité & bonnes pratiques SSI (notions)</Badge>
                   </div>
                 </CardContent>
               </Card>
@@ -447,7 +448,7 @@ export default function Home() {
                     <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-2 relative z-10" />
                     <CardTitle className="text-sm sm:text-base relative z-10">Cybersécurité</CardTitle>
                     <CardDescription className="text-xs sm:text-sm relative z-10">
-                      Pentest, audit, durcissement
+                      Sécurisation des infrastructures • Gestion des accès • Durcissement systèmes • Supervision • Bonnes pratiques SSI
                     </CardDescription>
                   </CardHeader>
                 </Card>
@@ -461,7 +462,7 @@ export default function Home() {
                     <Target className="h-6 w-6 sm:h-8 sm:w-8 text-secondary mb-2 relative z-10" />
                     <CardTitle className="text-sm sm:text-base relative z-10">Systèmes & Réseaux</CardTitle>
                     <CardDescription className="text-xs sm:text-sm relative z-10">
-                      VMware, AD, DNS, GPO, firewall
+                      Windows Server • Active Directory • GPO • DNS • DHCP • Linux • VMware ESXi • Firewalling • Segmentation réseau
                     </CardDescription>
                   </CardHeader>
                 </Card>
