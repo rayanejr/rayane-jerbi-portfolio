@@ -332,8 +332,8 @@ export default function Home() {
             className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-4 animate-fade-in leading-relaxed"
             style={{ animationDelay: "0.6s", animationFillMode: "both" }}
           >
-            Étudiant en 2ᵉ année de Master IRS (Université Paris-Saclay, 2024–2026). Recherche une alternance (3
-            semaines entreprise / 1 semaine école) pour développer mes compétences en cybersécurité et DevSecOps.
+            Futur étudiant en Mastère Spécialisé Expert en Cybersécurité (Université de Technologie de Troyes, 2026–2027).
+            À la recherche d'une alternance (3 semaines entreprise / 1 semaine école) pour développer mes compétences en cybersécurité et sécurité des infrastructures.
           </p>
           <div
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 animate-fade-in"
@@ -418,15 +418,9 @@ export default function Home() {
                 className="cyber-border hover:cyber-glow transition-all duration-500 bg-card/50 backdrop-blur-sm animate-fade-in"
                 style={{ animationDelay: "0.6s", animationFillMode: "both" }}
               >
-                <CardContent className="p-6 space-y-4">
+                <CardContent className="p-6">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Étudiant en Master Ingénierie des Réseaux et Systèmes – spécialité cybersécurité, je m'intéresse aux métiers de la cybersécurité et du SecOps, avec un focus sur la sécurisation des infrastructures, des environnements systèmes et réseaux et des processus d'exploitation IT.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Actuellement en alternance au Laboratoire National de Métrologie et d'Essais (LNE), j'évolue dans un environnement institutionnel structuré, où j'interviens sur des sujets systèmes, réseaux et sécurité opérationnelle.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    À partir de septembre 2026, j'intégrerai le Mastère Spécialisé Expert en Cybersécurité (UTT) afin de renforcer mes compétences en cybersécurité opérationnelle, SecOps et protection des systèmes d'information.
+                    Étudiant en Master Ingénierie des Réseaux et Systèmes spécialité cybersécurité. Actuellement en alternance au Laboratoire National de Métrologie et d'Essais (LNE) sur des sujets systèmes, réseaux et sécurité. À partir de septembre 2026, j'intégrerai le Mastère Spécialisé Expert en Cybersécurité (UTT) afin de renforcer mes compétences en cybersécurité opérationnelle, SecOps et protection des systèmes d'information.
                   </p>
                 </CardContent>
               </Card>
