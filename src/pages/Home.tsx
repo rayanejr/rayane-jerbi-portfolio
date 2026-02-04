@@ -333,7 +333,7 @@ export default function Home() {
             style={{ animationDelay: "0.6s", animationFillMode: "both" }}
           >
             Futur étudiant en Mastère Spécialisé Expert en Cybersécurité (Université de Technologie de Troyes, 2026–2027).
-            À la recherche d'une alternance (3 semaines entreprise / 1 semaine école) pour développer mes compétences en cybersécurité et sécurité des infrastructures.
+            À la recherche d'une alternance (3 semaines entreprise / 1 semaine école) pour développer mes compétences en cybersécurité.
           </p>
           <div
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 animate-fade-in"
